@@ -1,0 +1,43 @@
+# Exercise #1
+names = ["Avi", "Jim", "Jill"]
+print(names[1])
+ 
+# Exercise #2
+sports = ["Baseball", "Basketball", "Cricket"]
+sports[1] = "Football"
+ 
+# Exercise #3
+nums = [1,2,3,4,5,6,7]
+del nums[4]
+ 
+# Exercise #4
+nums1 = [1,2,3]
+nums2 = [4,5,6]
+nums3 = nums1 + nums2
+ 
+#Exercise #5
+nums = [9,3,15,18,98,1]
+print(max(nums))
+print(min(nums))
+print(len(nums))
+ 
+#Exercise #6
+students = {"Avi": 94, "Jack":88, "Jill":84}
+print(students["Avi"])
+ 
+#Exercise #7
+data = {"Rachel": 17, "Rahul": 61, "Anna": 15}
+del data["Rahul"]
+ 
+#Exercise #8
+data = {"Rachel": 17, "Rahul": 61, "Anna": 15}
+print(data.keys)
+print(data.values)
+ 
+#Exercise #9
+movies = ("Inception", "The Imitation Game", "The Secret Life of Walter Mitty")
+print(movies)
+ 
+#Exercise #10
+data = (1,2,3)
+print(data[0:2])
