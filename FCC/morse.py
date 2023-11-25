@@ -8,12 +8,15 @@ letter_to_morse = {
 }
 
 def encode(message):
-    morse = []
+    if "!" in message:
+        raise ValueError(f"'!' is not valid in English strings")
 
-    for letter in message:
-        x = letter.lower() #added this
-        morse_letter = letter_to_morse[x]
-        morse.append(morse_letter)
+    morse = [letter_to_morse[letter] for letter in message.lower()]
+
+    #for letter in message:
+    #    x = letter.lower() #added this
+    #    morse_letter = letter_to_morse[x]
+    #    morse.append(morse_letter)
 
     # We need to join together Morse code letters with spaces
     return " ".join(morse)
